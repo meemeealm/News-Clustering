@@ -1,7 +1,7 @@
 pandas 
 matplotlib 
 numpy 
-nltk 
+
 wordcloud
 
 scikit-learn 
