@@ -1,11 +1,15 @@
 pandas 
+numpy
 matplotlib 
-numpy 
+seaborn
+
+ 
 nltk 
 wordcloud
 
 scikit-learn 
 spacy
+
 jupyter
 
 
