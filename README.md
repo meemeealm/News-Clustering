@@ -33,7 +33,9 @@ In today’s information‑dense environment, readers are flooded with thousands
 3. **Bisecting K-Means (BiKMeans)**: Implemented a top-down hierarchical clustering approach.
 * *Observation*: Even though the Silhouette score dropped to , this model successfully "shattered" the primary cluster, providing a much more even and semantically useful distribution of news topics.
 
-![](images/workflow_news_clustering.png)
+<p align="center">
+  <img src="images/workflow_news_clustering.png" width="20%" />
+</p>
 
 ### Models Performance Comparison
 
