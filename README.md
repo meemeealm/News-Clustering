@@ -1,6 +1,29 @@
 ## News Clustering: A Lexical Approach
 
-This project explores the unsupervised categorization of news headlines using various NLP pipelines. The goal was to move from a generic baseline to a model capable of breaking down large, dense "news blobs" into meaningful sub-topics.
+## Problem Statement
+
+This project tackles the challenge of **unsupervised categorization of news headlines**. Instead of predicting predefined labels, the model groups articles into clusters of related content. By applying NLP pipelines and ultimately selecting **Bisecting KMeans** as the clustering algorithm, the system breaks down large, dense “news blobs” into meaningful sub‑topics.
+
+### What the model is predicting
+- The model predicts **clusters of similar news articles** based on textual features extracted from headlines and short descriptions.  
+- Each cluster represents a potential sub‑topic (e.g., politics, sports, technology, entertainment) discovered without human‑assigned labels.
+
+### Who benefits
+- **Readers**: Gain easier navigation through overwhelming volumes of news by seeing related stories grouped together.  
+- **Journalists & editors**: Identify emerging themes or trending topics across large datasets.  
+- **Researchers & analysts**: Use clusters to study media coverage patterns and topic evolution.  
+- **News aggregators**: Improve personalization and recommendation systems by organizing content into coherent groups.
+
+### How the model will be used
+- Input: Raw news headlines and short descriptions.  
+- Processing: Text preprocessing → TF‑IDF vectorization → dimensionality reduction → Bisecting KMeans clustering.  
+- Output: Cluster assignments that group articles into sub‑topics.  
+- These clusters can be visualized, analyzed, or used as a foundation for downstream tasks like topic labeling or recommendation engines.
+
+### Why this problem matters
+In today’s information‑dense environment, readers are flooded with thousands of articles daily. Without automated organization, valuable insights are buried in noise. **Unsupervised news clustering helps transform unstructured text into structured knowledge**, making it easier to digest, analyze, and act upon. This contributes to better information accessibility, improved media analysis, and more efficient content delivery.
+
+---
 
 ### Pipeline
 
