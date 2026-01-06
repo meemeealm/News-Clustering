@@ -1,4 +1,4 @@
-## News Clustering: A Lexical Approach
+## News Clustering
 
 ## Problem Statement
 
