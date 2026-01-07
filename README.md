@@ -55,6 +55,7 @@ The following table tracks the trade-off between mathematical tightness and clus
 * **NLP**: Scikit-Learn (TF-IDF, SVD)
 * **Clustering**: KMeans, BisectingKMeans
 * **Visualization**: PCA (2D/3D), Matplotlib, Seaborn
+* **Deployment**: Flask, Docker
 
 ---
 
@@ -74,8 +75,6 @@ I  selected **Bisecting K-Means** as the production model for the following reas
 * **Semantic Granularity:** By utilizing a hierarchical, top-down splitting strategy, BiKMeans forced the "General News" mass to fracture into distinct sub-topics (e.g., separating "Regional Politics" from "National Policy").
 * **Balance vs. Separation:** A lower Silhouette score () in exchange for a lower **Gini Coefficient** (a measure of cluster size inequality).
 * **Real-World Utility:** A model that provides 27 actionable, balanced categories is significantly more valuable for downstream tasks (like automated tagging or recommendation engines) than a model that provides one giant "Catch-all" category.
-
----
 
 ### Summary
 
