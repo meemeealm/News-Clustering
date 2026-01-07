@@ -91,6 +91,8 @@ I  selected **Bisecting K-Means** as the production model for the following reas
 ---
 ### Setup & Installation
 
+#### Local Machine
+
 1. Clone the Repository
 ```bash
 git clone https://github.com/your-username/your-repo.git
@@ -133,3 +135,43 @@ curl -X POST http://127.0.0.1:5000/predict \
      -H "Content-Type: application/json" \
      -d '{"headline":"Test Headline","short_description":"Test Description"}'
 ```
+
+#### Using Docker 
+
+Prerequisites
+- Install [Docker](https://docs.docker.com/get-docker/) on your machine.
+- Verify installation:
+  ```bash
+  docker --version
+  ```
+- Ensure you have the `Dockerfile` in your project root directory.  
+
+
+Build the Docker Image
+1. Open a terminal in the project directory (where the `Dockerfile` is located).
+2. Run the following command:
+   ```bash
+   docker build -t flask-app:latest .
+   ```
+
+3. Verify the image was built:
+   ```bash
+   docker images
+   ```   
+
+Run the Container
+1. Start a container from the image:
+   ```bash
+   docker run -d -p 8080:8080 --name my-app-container flask-app:latest
+   ```
+
+2. Check running containers:
+   ```bash
+   docker ps
+   ```
+
+3. Stop the container when done:
+   ```bash
+   docker stop my-app-container
+   ```
+
