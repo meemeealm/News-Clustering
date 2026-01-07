@@ -76,7 +76,7 @@ I  selected **Bisecting K-Means** as the production model for the following reas
 * **Balance vs. Separation:** A lower Silhouette score () in exchange for a lower **Gini Coefficient** (a measure of cluster size inequality).
 * **Real-World Utility:** A model that provides 27 actionable, balanced categories is significantly more valuable for downstream tasks (like automated tagging or recommendation engines) than a model that provides one giant "Catch-all" category.
 
-### Summary
+### Models Summary
 
 | Model | Strategy | Primary Strength | Verdict |
 | --- | --- | --- | --- |
@@ -85,4 +85,47 @@ I  selected **Bisecting K-Means** as the production model for the following reas
 | **Bisecting K-Means** | Hierarchical Split | **Best Topic Discovery** | **Selected Model** |
 
 ---
+### Setup & Installation
 
+1. Clone the Repository
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+```
+
+2. Create a Virtual Environment
+```bash
+python3 -m venv venv
+source venv/bin/activate   # On macOS/Linux
+venv\Scripts\activate      # On Windows
+```
+
+3. Install Dependencies
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+4. Place the Model File
+Ensure the trained pipeline file (`pipeline_bisecting.pkl`) is located in the project root (same folder as `app.py` or `serve.py`).
+
+5. Run the Flask App
+```bash
+python app.py
+```
+
+
+```
+http://127.0.0.1:5000/
+```
+
+6. Test in Browser (Form)
+Open [http://127.0.0.1:5000/](http://127.0.0.1:5000/) and submit a headline + description via the form.
+
+7. Test via Curl (Optional)
+You can also test the `/predict` endpoint directly from bash:
+```bash
+curl -X POST http://127.0.0.1:5000/predict \
+     -H "Content-Type: application/json" \
+     -d '{"headline":"Test Headline","short_description":"Test Description"}'
+```
