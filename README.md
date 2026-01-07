@@ -65,9 +65,13 @@ While the **Improved K-Means** model achieved the highest mathematical scores (,
 
 ![](images/clusters_comparison-min.png)  
 
-![](images/clusters_tunedkmeans-min.png)  
+<p align="center">
+  <img src="images/clusters_tunedkmeans-min.png" width="70%" />
+</p>
 
-![](images/clusters_bisectingkmeans-min.png)  
+<p align="center">
+  <img src="images/clusters_bisectingkmeans-min.png" width="70%" />
+</p>
 
 
 I  selected **Bisecting K-Means** as the production model for the following reasons:
