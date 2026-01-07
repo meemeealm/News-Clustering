@@ -63,12 +63,12 @@ The following table tracks the trade-off between mathematical tightness and clus
 
 While the **Improved K-Means** model achieved the highest mathematical scores (, ), it suffered from the **"Majority Cluster Problem."** In this state, the model successfully isolated small niche topics (outliers) but failed to segment the core 90% of the dataset, leaving 40,000+ headlines in a single, uninformative "General News" blob.
 
-![](images/clusters_comparison-min.png)
+![](images/clusters_comparison-min.png)  
 
-<p align="center">
-  <img src="images/clusters_tunedkmeans-min.png" width="45%" />
-  <img src="images/clusters_bisectingkmeans-min.png" width="45%" />
-</p>
+![](images/clusters_tunedkmeans-min.png)  
+
+![](images/clusters_bisectingkmeans-min.png)  
+
 
 I  selected **Bisecting K-Means** as the production model for the following reasons:
 
