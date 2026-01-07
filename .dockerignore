@@ -1,0 +1,7 @@
+notebooks/
+dataset/
+images/
+README.md
+.git
+venv/
+__pycache__/
